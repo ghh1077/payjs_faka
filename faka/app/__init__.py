@@ -6,9 +6,6 @@ from flask_bootstrap import Bootstrap
 from flask_mail import Mail
 from flask_pagedown import PageDown
 from flask_admin import Admin
-from flask_caching import Cache
-from celery import Celery, platforms
-import logging
 import datetime
 from datetime import timedelta
 from redis import Redis

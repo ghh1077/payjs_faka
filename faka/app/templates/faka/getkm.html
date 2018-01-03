@@ -36,8 +36,8 @@
                   <tbody>
                     {%for order in orders%}
                     <tr>
-                      <td>{{order.good.good_name}} </td>
-                      <td>{{order.good.good_price}}</td>
+                      <td>{{db.session.execute('select a.good_name from goods a,orders b where a.good_id=b.good_id and b.trade_id={}'.format(order.trade_id)).fetchone()[0]}} </td>
+                      <td>{{db.session.execute('select a.good_price from goods a,orders b where a.good_id=b.good_id and b.trade_id={}'.format(order.trade_id)).fetchone()[0]}}</td>
                       <td>{{order.starttime}}</td>
                       <td>{{order.km.km_value}}</td>
                     </tr>

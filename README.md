@@ -40,7 +40,7 @@
 
 0. 推荐环境：centos7+python2.7
 
-1. git clone https://github.com/za2016/payjs_faka.git
+1. git clone https://github.com/tangrela/payjs_faka.git
 
 2. cd payjs_faka/faka
 

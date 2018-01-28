@@ -6,7 +6,6 @@ from . import auth
 from .. import db
 from ..models import *
 from .forms import *
-from ..email import *
 from ..verify_code import ImageChar
 import cStringIO as StringIO
 import urllib

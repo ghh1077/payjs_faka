@@ -6,7 +6,6 @@ from auth.forms import *
 from flask import render_template, make_response, redirect, request, url_for, flash, session, jsonify, g, current_app, send_from_directory
 from flask_login import login_user, logout_user, login_required, \
     current_user
-from app.email import send_email
 from app.decorators import admin_required, permission_required
 from flask_wtf import FlaskForm
 from wtforms.validators import URL

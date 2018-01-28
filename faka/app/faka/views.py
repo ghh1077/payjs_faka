@@ -5,7 +5,6 @@ from flask_login import login_user, logout_user, login_required, current_user
 from . import faka
 from .. import db
 from ..models import *
-from ..email import *
 import requests
 from ..payjs import getqr
 

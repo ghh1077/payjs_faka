@@ -8,7 +8,6 @@ from flask_pagedown import PageDown
 from flask_admin import Admin
 import datetime
 from datetime import timedelta
-from redis import Redis
 
 
 app = Flask(__name__)
@@ -19,8 +18,6 @@ login_manager.login_view = 'auth.login'
 #login_manager.login_message = u"请登录！"
 admin = Admin(app)
 bootstrap = Bootstrap(app)
-mail = Mail(app)
-pagedown = PageDown(app)
 db = SQLAlchemy(app, use_native_unicode='utf8')
 
 from .faka import faka as faka_blueprint

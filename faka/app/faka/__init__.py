@@ -3,4 +3,4 @@ from flask import Blueprint
 
 faka = Blueprint('faka', __name__)
 
-from . import views, forms
+from . import views

@@ -1,6 +1,5 @@
 #-*- coding=utf-8 -*-
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
@@ -17,7 +16,6 @@ login_manager.session_protect = 'strong'
 login_manager.login_view = 'auth.login'
 #login_manager.login_message = u"请登录！"
 admin = Admin(app)
-bootstrap = Bootstrap(app)
 db = SQLAlchemy(app, use_native_unicode='utf8')
 
 from .faka import faka as faka_blueprint

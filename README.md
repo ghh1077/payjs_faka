@@ -1,4 +1,4 @@
-# 基于[payjs](http://payjs.cn)的个人发卡平台
+# 基于[payjs](https://payjs.cn/ref/KZVNLZ)的个人发卡平台
 ----
 
 开发环境: Python2.7
